@@ -1,9 +1,11 @@
 import { Menu, X, Wifi } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { useSmoothScroll } from "@/hooks/use-smooth-scroll";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  useSmoothScroll();
 
   return (
     <nav className="fixed w-full top-0 z-50 bg-primary/95 backdrop-blur-sm border-b border-primary">
